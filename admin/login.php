@@ -13,6 +13,7 @@
     <body>
 
     <div class="container">
+        <!-- Admin Login Form Start-->
         <div class="row justify-content-center lh-100vh" id="login-form-box">
             <div class="col-lg-10 " style="margin-top: 200px">
                 <div class="card-group">
@@ -63,6 +64,42 @@
             </div>
 
         </div>
+        <!-- Admin Login Form End-->
+
+        <!-- Admin Login Form Start-->
+        <div class="row justify-content-center lh-100vh" id="login-form-box">
+            <div class="col-lg-10 " style="margin-top: 200px">
+                <div class="card-group">
+                    <div class="card p-4">
+                        <h2 class="text-center text-primary font-weight-bold">Reset your password</h2>
+                        <hr class="my-3">
+                        <form action="#" method="post" class="px-3" id="login-form">
+                            <div class="input-group input-group-lg form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Reset Password" class="btn btn-block btn-primary">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card p-4 justify-content-center" style="background: #363C43">
+                        <h2 class="text-center text-primary font-weight-bold">Welcome back!</h2>
+                        <hr class="my-3 bg-light">
+                        <p class="text-center text-light">
+                            Enter your email and check your inbox for instructions. Please also check your spam folder.
+                        </p>
+                        <button class="btn btn-outline-light btn-lg align-self-center mt-4">Sign in</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Admin Login Form End-->
     </div>
         
     <script src="../assets/js/jquery-3.5.1.min.js" async defer></script>
