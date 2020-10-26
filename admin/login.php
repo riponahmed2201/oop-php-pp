@@ -43,7 +43,7 @@
                                     <label for="" class="custom-control-label">Remember me</label>
                                 </div>
                                 <div class="float-right">
-                                    <a href="javascript:" class="text-decoration-none">Forget Password ?</a>
+                                    <a href="javascript:" class="text-decoration-none" id="showForgetForm">Forget Password ?</a>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
@@ -58,7 +58,7 @@
                         <p class="text-center text-light">
                             Please log in using your email and password. If you haven't registered yet, you can register for free.
                         </p>
-                        <button class="btn btn-outline-light btn-lg align-self-center mt-4">Sign up</button>
+                        <button class="btn btn-outline-light btn-lg align-self-center mt-4" id="showSignUpForm">Sign up</button>
                     </div>
                 </div>
             </div>
@@ -66,8 +66,67 @@
         </div>
         <!-- Admin Login Form End-->
 
-        <!-- Admin Login Form Start-->
-        <div class="row justify-content-center lh-100vh" id="login-form-box">
+        <!-- Admin Create new account Form Start-->
+        <div class="row justify-content-center lh-100vh" id="register-form-box" style="display: none">
+            <div class="col-lg-10 " style="margin-top: 200px">
+                <div class="card-group">
+                    <div class="card p-4">
+                        <h2 class="text-center text-primary font-weight-bold">Create new account</h2>
+                        <hr class="my-3">
+                        <form action="#" method="post" class="px-3" id="register-form">
+                            <div class="input-group input-group-lg form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                       <i class="fas fa-user"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+                            </div>
+                            <div class="input-group input-group-lg form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="input-group input-group-lg form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-key"></i>
+                                    </span>
+                                </div>
+                                <input type="password" class="form-control" name="password" id="password" placeholder="Enter your password">
+                            </div>
+                            <div class="input-group input-group-lg form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-key"></i>
+                                    </span>
+                                </div>
+                                <input type="password" class="form-control" name="c_password" id="c_password" placeholder="Enter your confirm password">
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Register" class="btn btn-block btn-primary">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card p-4 justify-content-center" style="background: #363C43">
+                        <h2 class="text-center text-primary font-weight-bold">Welcome back!</h2>
+                        <hr class="my-3 bg-light">
+                        <p class="text-center text-light">
+                            Please log in using your email and password. If you haven't registered yet, you can register for free.
+                        </p>
+                        <button class="btn btn-outline-light btn-lg align-self-center mt-4" id="showSignInForm">Sign in</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Admin Create new account Form End-->
+
+        <!-- Admin Forgotten Form Start-->
+        <div class="row justify-content-center lh-100vh" id="forgotten-form-box" style="display: none">
             <div class="col-lg-10 " style="margin-top: 200px">
                 <div class="card-group">
                     <div class="card p-4">
@@ -93,13 +152,13 @@
                         <p class="text-center text-light">
                             Enter your email and check your inbox for instructions. Please also check your spam folder.
                         </p>
-                        <button class="btn btn-outline-light btn-lg align-self-center mt-4">Sign in</button>
+                        <button class="btn btn-outline-light btn-lg align-self-center mt-4" id="back">Back</button>
                     </div>
                 </div>
             </div>
 
         </div>
-        <!-- Admin Login Form End-->
+        <!-- Admin Forgotten Form End-->
     </div>
         
     <script src="../assets/js/jquery-3.5.1.min.js" async defer></script>
